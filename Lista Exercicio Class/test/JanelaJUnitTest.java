@@ -12,7 +12,7 @@ public class JanelaJUnitTest {
     public void testeComprimento() {
         Janela x1 = new Janela();
         x1.setComprimento(1.25f);
-        assertEquals(2.30f, x1.getComprimento(), 00);
+        assertEquals(1.25f, x1.getComprimento(), 00);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class JanelaJUnitTest {
     public void testeAtura(){
         Janela x1 = new Janela();
         x1.setAltura(1.30f);
-        assertEquals(1.30f, x1.getComprimento(), 00);
+        assertEquals(1.30f, x1.getAltura(), 00);
     }
     
     @Test
@@ -36,5 +36,19 @@ public class JanelaJUnitTest {
         assertEquals(25.50f, x1.getPreco(), 00);
     }
     
+    @Test
+    public void testeMarca(){
+        Janela x1 = new Janela();
+        x1.setMarca("Aluminox");
+        assertEquals("Aluminox", x1.getMarca());
+    }
+    
+    
+    @Test
+    public void testeInsulfilme(){
+        Janela x1 = new Janela();
+        x1.setInsulfilme("Aluminox");
+        assertEquals("Aluminox", x1.getInsulfilme());
+    }
 
 }
